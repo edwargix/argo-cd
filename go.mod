@@ -301,4 +301,4 @@ replace (
 	k8s.io/sample-apiserver => k8s.io/sample-apiserver v0.24.2
 )
 
-replace github.com/argoproj/notifications-engine => github.com/edwargix/notifications-engine v0.0.0-20220821200827-66c1c9abd55b
+replace github.com/argoproj/notifications-engine => github.com/edwargix/notifications-engine v0.0.0-20220821213247-bbe12790aefe

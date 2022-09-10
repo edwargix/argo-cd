@@ -117,11 +117,16 @@ require (
 )
 
 require (
+	github.com/gorilla/mux v1.8.0 // indirect
+	github.com/mattn/go-colorable v0.1.12 // indirect
+	github.com/mattn/go-sqlite3 v1.14.14 // indirect
+	github.com/rs/zerolog v1.27.0 // indirect
 	github.com/tidwall/gjson v1.14.3 // indirect
 	github.com/tidwall/match v1.1.1 // indirect
 	github.com/tidwall/pretty v1.2.0 // indirect
 	github.com/tidwall/sjson v1.2.5 // indirect
 	github.com/yuin/goldmark v1.4.12 // indirect
+	maunium.net/go/maulogger/v2 v2.3.2 // indirect
 	maunium.net/go/mautrix v0.12.0 // indirect
 )
 
@@ -301,4 +306,4 @@ replace (
 	k8s.io/sample-apiserver => k8s.io/sample-apiserver v0.24.2
 )
 
-replace github.com/argoproj/notifications-engine => github.com/edwargix/notifications-engine v0.0.0-20220822021410-0102b0d92500
+replace github.com/argoproj/notifications-engine => github.com/edwargix/notifications-engine v0.0.0-20220910153147-a6951d270fd3

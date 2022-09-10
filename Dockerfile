@@ -49,7 +49,7 @@ RUN groupadd -g $ARGOCD_USER_ID argocd && \
     apt-get update && \
     apt-get dist-upgrade -y && \
     apt-get install -y \
-    git git-lfs tini gpg tzdata && \
+    git git-lfs libolm3 tini gpg tzdata && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
@@ -103,6 +103,8 @@ FROM --platform=$BUILDPLATFORM docker.io/library/golang:1.18 AS argocd-build
 
 WORKDIR /go/src/github.com/argoproj/argo-cd
 
+RUN apt-get update && \
+    apt-get install -y libolm-dev
 COPY go.* ./
 RUN go mod download
 

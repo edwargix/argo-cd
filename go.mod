@@ -216,7 +216,7 @@ require (
 	github.com/russross/blackfriday v1.5.2 // indirect
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
 	github.com/sergi/go-diff v1.1.0 // indirect
-	github.com/slack-go/slack v0.10.1 // indirect
+	github.com/slack-go/slack v0.12.1 // indirect
 	github.com/tidwall/gjson v1.14.3 // indirect
 	github.com/tidwall/match v1.1.1 // indirect
 	github.com/tidwall/pretty v1.2.0 // indirect
@@ -300,4 +300,4 @@ replace (
 	k8s.io/sample-apiserver => k8s.io/sample-apiserver v0.24.2
 )
 
-replace github.com/argoproj/notifications-engine => github.com/edwargix/notifications-engine v0.0.0-20220918145049-ceae2a264cf8
+replace github.com/argoproj/notifications-engine => github.com/edwargix/notifications-engine v0.0.0-20221231164322-ce720ee1407a

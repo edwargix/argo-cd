@@ -67,6 +67,7 @@ export class AppsListPreferences {
         pref.projectsFilter = [];
         pref.reposFilter = [];
         pref.syncFilter = [];
+        pref.autoSyncFilter = [];
         pref.showFavorites = false;
     }
 
@@ -74,6 +75,7 @@ export class AppsListPreferences {
     public projectsFilter: string[];
     public reposFilter: string[];
     public syncFilter: string[];
+    public autoSyncFilter: string[];
     public healthFilter: string[];
     public namespacesFilter: string[];
     public clustersFilter: string[];
@@ -90,6 +92,7 @@ export interface ViewPreferences {
     appList: AppsListPreferences;
     pageSizes: {[key: string]: number};
     hideBannerContent: string;
+    hideSidebar: boolean;
     position: string;
     theme: string;
 }
@@ -126,6 +129,7 @@ const DEFAULT_PREFERENCES: ViewPreferences = {
         clustersFilter: new Array<string>(),
         reposFilter: new Array<string>(),
         syncFilter: new Array<string>(),
+        autoSyncFilter: new Array<string>(),
         healthFilter: new Array<string>(),
         hideFilters: false,
         showFavorites: false,
@@ -136,6 +140,7 @@ const DEFAULT_PREFERENCES: ViewPreferences = {
     },
     pageSizes: {},
     hideBannerContent: '',
+    hideSidebar: false,
     position: '',
     theme: 'light'
 };
